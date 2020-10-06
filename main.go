@@ -123,7 +123,8 @@ func (wordDict *WordDict)segment() (buffer [][]string) {
 			break
 		}
 
-		i, buffer := 0, append(buffer, []string{})
+		i := 0
+		buffer = append(buffer, []string{})
 		for i < len(line){
 			var isBreakdown bool
 			temp, j, lastEnd, count := wordDict.dict, i, i, 0
@@ -144,8 +145,7 @@ func (wordDict *WordDict)segment() (buffer [][]string) {
 				i = k
 				continue
 			}
-			buffer[l] = append(buffer[l], string(line[i:lastEnd]))
-			i = lastEnd
+			i, buffer[l] = lastEnd, append(buffer[l], string(line[i:lastEnd]))
 		}
 		l++
 	}
