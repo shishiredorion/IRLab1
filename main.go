@@ -176,7 +176,7 @@ func (wordDict *WordDict)calculatePRF(buffer [][]string)  {
 		line = line[:len(line) - 1]
 
 		p, r, f := calculatePRF(strings.Fields(line), buffer[l])
-		_, err2 := prfFile.WriteString(fmt.Sprintf("%.3f, %.3f, %.3f\n", p, r, f))
+		_, err2 := prfFile.WriteString(fmt.Sprintf("%.3f %.3f %.3f\n", p, r, f))
 		if err2 != nil{
 			log.Fatalln(err2)
 		}
