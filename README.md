@@ -2,7 +2,11 @@
 
 该项目采用Go语言编写，需要在对应的环境执行
 
+## 项目地址
 
+https://github.com/shishiredorion/IRLab1
+
+https://gitee.com/shishiredorion/irlab1
 
 ## How To Run
 
@@ -27,7 +31,6 @@
 该项目采用硬编码的方式读取所需的文件，因需要以下三个符合格式要求的文件并放置在工作目录下：
 
 1. corpus.dict.txt
-
 2. corpus.sentence.txt
 3. corpus.answer.txt
 
