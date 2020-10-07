@@ -1,4 +1,5 @@
 # Lab1 汉语分词：最大匹配方法
+[![Build Status](https://travis-ci.com/shishiredorion/IRLab1.svg?branch=master)](https://travis-ci.com/shishiredorion/IRLab1)
 
 该项目采用Go语言编写，需要在对应的环境执行
 
