@@ -1,0 +1,9 @@
+
+language: go
+
+go:
+  - 1.14
+
+script:
+  - go run ./main.go
+  - go build ./...
